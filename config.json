@@ -14,7 +14,23 @@
     "speed_limit_per_con": 0,
     "speed_limit_per_user": 0,
 
-    "additional_ports" : {}, // only works under multi-user mode
+    "additional_ports" : {
+        "443": {
+
+        "passwd": "loveyou",
+
+        "method": "aes-256-cfb",
+
+        "protocol": "auth_aes128_md5",
+
+        "protocol_param": "#",
+
+        "obfs": "http_simple_compatible",
+
+        "obfs_param": ""
+
+    }
+    }, // only works under multi-user mode
     "additional_ports_only" : false, // only works under multi-user mode
     "timeout": 120,
     "udp_timeout": 60,
